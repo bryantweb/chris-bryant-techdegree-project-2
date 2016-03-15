@@ -72,14 +72,28 @@ p {
 }
 
 .contact {
-  margin-top: 105px;
+  margin-top: 95px;
+  margin-bottom: 60px;
+  clear: both;
+  display: block;
 }
 .contact h3 {
-  margin-bottom: 35px;
+  margin: 0 0 35px;
 }
 .contact p {
   color: #7f7f7f;
 }
+.phone-email {
+  display: block;
+  margin-top: 30px;
+  margin-bottom:40px;
+}
+  .phone-number,
+  .email-address {
+    font-weight: 600;
+    padding-left: 10px;
+  }
+
 
 /* Header Nav Styles */
 
@@ -145,7 +159,7 @@ footer {
 
 footer .nav {
   border-top: 1px solid #e7e7e7;
-  padding: 20px 0;
+  padding: 10px 0 40px;
 }
 
 footer .nav li#name {
@@ -156,6 +170,8 @@ footer .nav li#name {
 
 #back-to-top {
   float: right;
+  font-size: 13px;
+  padding-top: 13px;
 }
 
 li#contact,
