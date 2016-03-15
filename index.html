@@ -1,88 +1,80 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Chris Bryant - CSS Project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles.css">
-  <script src="js/picturefill.min.js" async></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Chris Bryant - Responsive Layout Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
   <body>
 
-  <header>
-    <div class="main-nav">
-        <ul class="nav wrap">
-          <li id="name"><a href="index.html" title="Chris Bryant Homepage">Chris Bryant</a></li>
-          <li><a href="index.html" title="Homepage" class="selected">Home</a></li>
-          <li><a href="portfolio.html" title="Design Portfolio">Portfolio</a></li>
-          <li><a href="contact.html" title="contact Chris">Contact</a></li>
-        </ul>
-    </div>
-  </header>
+    <header>
+          <ul class="nav wrap">
+            <li id="name"><a href="index.html" title="Chris Bryant Homepage">Chris Bryant</a></li>
+            <li><a href="index.html" title="Homepage" class="selected">Home</a></li>
+            <li><a href="portfolio.html" title="Design Portfolio">Portfolio</a></li>
+            <li><a href="contact.html" title="contact Chris">Contact</a></li>
+          </ul>
+    </header>
+
   <section class="profile wrap">
     <img src="img/responsive-layout-profile.png" alt="Chris Bryant-Frontend Developer" height="225"
 width="367"/>
     <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
   </section>
 
-    <main class="portfolio wrap">
-      <h2>Portfolio</h2>
-        <div class="column portfolio-item"><!-- first item -->
-<!--           <img 
-          srcset="img/portfolio-1@2x.png 2x,
-                  img/portfolio-1@1x.png 1x"
-          src="img/portfolio-1.png"
-          alt="Marketing Portfolio Item"/> -->
+    <main class="portfolio wrap clearfix">
+      <h1>Portfolio</h1>
+        <div class="column"><!-- first item -->
           <img src="img/portfolio-1.png" alt="Marketing Portfolio Item"/>
-          <h3>Marketing Page</h3>
+          <h2>Marketing Page</h2>
           <p>This project shows the frontpage of a marketing website meant for a specific business I'm interested in.</p>
         </div><!-- /first item -->
-        <div class="column portfolio-item"><!-- second item -->
+        <div class="column"><!-- second item -->
           <img src="img/portfolio-2.png" alt="Marketing Portfolio Item"/>
-          <h3>Search Page</h3>
+          <h2>Search Page</h2>
           <p>This project searches through a specific database to find information that the user is trying to look up</p>
         </div><!-- /second item -->
-        <div class="column portfolio-item"><!-- third item -->
+        <div class="column"><!-- third item -->
           <img src="img/portfolio-3.png" alt="Marketing Portfolio Item"/>
-          <h3>Travel App</h3>
+          <h2>Travel App</h2>
           <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
         </div><!-- /third item -->
-        <div class="column portfolio-item"><!-- fourth item -->
+        <div class="column"><!-- fourth item -->
           <img src="img/portfolio-6.png" alt="Marketing Portfolio Item"/>
-          <h3>Map of Favorite Spots</h3>
+          <h2>Map of Favorite Spots</h2>
           <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour. </p>
         </div><!-- /fourth item -->
-        <div class="column portfolio-item"><!-- fifth item -->
+        <div class="column"><!-- fifth item -->
           <img src="img/portfolio-5.png" alt="Marketing Portfolio Item"/>
-          <h3>Photo Gallery</h3>
+          <h2>Photo Gallery</h2>
           <p>This project show pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
         </div><!-- /fifth item -->
-        <div class="column portfolio-item"><!-- sixth item -->
+        <div class="column"><!-- sixth item -->
           <img src="img/portfolio-4.png" alt="Marketing Portfolio Item"/>
-          <h3>Calculator</h3>
+          <h2>Calculator</h2>
           <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
         </div><!-- /sixth item -->
     </main>
 
-    <section class="home-contact-info wrap">
-        <h4>Contact</h4>
-        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <p>Phone <span class="phone-number">778-215-7784</span></p>
-        <p>Email <span class="email-address">web@chrisbryant.com</span></p>
-
+    <section class="contact wrap clearfix">
+        <h3>Contact</h3>
+          <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+          <p>Phone <span class="phone-number">778-215-7784</span></p>
+          <p>Email <span class="email-address">web@chrisbryant.com</span></p>
     </section>
    
     <footer>
-        <div class="footer-nav wrap">
-          <ul class="nav">
+        <div class="wrap">
+          <ul class="nav" >
             <li id="name"><a href="index.html" title="Chris Bryant Homepage">Chris Bryant</a></li>
-            <li id="home"><a href="index.html" title="Homepage" class="selected">Home</a></li>
             <li id="portfolio"><a href="portfolio.html" title="Design Portfolio">Portfolio</a></li>
             <li id="contact"><a href="contact.html" title="Contact Chris">Contact</a></li>
+            <li id="home"><a href="index.html" title="Homepage">Home</a></li>
             <li id="back-to-top"><a href="#top" title="Go to the top of the page">Back To Top</a></li>
           </ul>
-        </div><!-- /footer-nav -->
+        </div> <!-- /footer-nav-->
     </footer>
 
   </body>
