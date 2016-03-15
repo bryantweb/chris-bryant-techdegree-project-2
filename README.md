@@ -9,6 +9,8 @@ Github project link: https://github.com/bryantweb/chris-bryant-techdegree-2
 
 
 ## Completed Project Goals
+* Created index.html and style.css files.
+* Link the style.css to the index.html file.
 
 
 
