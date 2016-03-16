@@ -116,13 +116,13 @@ header .nav {
   padding: .8em 0;
 }
 
-.nav li#name {
+.nav li.site-title{
   font-size: 25px;
   text-transform: none;
   font-weight: 700;
 }
 
-header .nav li#name {
+header .nav li.site-title {
   padding-top: 20px;
 }
 
@@ -162,7 +162,7 @@ footer .nav {
   padding: 10px 0 40px;
 }
 
-footer .nav li#name {
+footer .nav li.site-title {
   font-size: 14px;
   float: left;
   display: inline-block;
@@ -174,9 +174,7 @@ footer .nav li#name {
   padding-top: 13px;
 }
 
-li#contact,
-li#home,
-li#portfolio {
+li.extra-footer-links {
   display: none;
 }
 
@@ -195,9 +193,7 @@ li#portfolio {
       padding: 0 6px;
     }
     
-    li#contact,
-    li#home,
-    li#portfolio {
+    li.extra-footer-links {
       display: inline-block;
       float: right;
       padding-left: 10px;
