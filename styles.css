@@ -63,8 +63,6 @@ p {
   margin: .3em 0 5em 0;
 }
 
-
-
 .portfolio p {
   font-size: 15px;
   line-height: 1.4em;
@@ -96,8 +94,6 @@ p {
 
 
 /* Header Nav Styles */
-
-header { }
 
 header .nav {
   width: 100%;
@@ -181,9 +177,34 @@ li.extra-footer-links {
 /* iPad Styles */
 @media screen and (min-width: 768px) {
     
-      .wrap {
+    .wrap {
       max-width: 1024px;
-      padding: 0 30px;
+      padding: 0 20px;
+    }
+    header .nav li.site-title {
+      display: block;
+    }
+
+    header .nav li {
+    padding: .8em 1em;
+    display: inline-block;
+    }
+
+  .portfolio p {
+    font-size: 15px;
+    padding: 0 32px 1.875em;
+    letter-spacing: .5px;
+  }
+    /* PROFILE */
+    .profile img {
+    width: 290px;
+    float: right;
+    margin-left: 15px;
+    }
+    
+    .profile p {
+    font-size: 20px;
+    text-align: left;
     }
 
     .column {
@@ -192,6 +213,25 @@ li.extra-footer-links {
       float: left;
       padding: 0 6px;
     }
+    .contact {
+      display: inline-table;
+      margin-top: 80px;
+      margin-bottom: 10px;
+    }
+    .contact h3 {
+      margin: 0 0 50px;
+    }
+    .contact p {
+      font-size: 22px;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .phone-email {
+    margin-top: 45px;
+    }
+
+    /* footer */
     
     li.extra-footer-links {
       display: inline-block;
@@ -201,6 +241,10 @@ li.extra-footer-links {
     
     li#back-to-top {
       display: none;
+    }
+
+    footer .nav {
+      padding: 10px 0 100px;
     }
 
 }
