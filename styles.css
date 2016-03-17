@@ -20,12 +20,10 @@ body {
   text-align: center;
   font-family: 'Open sans','Helvetica Neue', Helvetica, arial, sans-serif;
   color: #4a4a4a;
-  background: #f4f4f4;
+  background: #f5f5f5;
 }
 
-/* Inner Container = .wrap */
-
-.wrap {
+.wrapper {
   max-width: 768px;
   margin: 0 auto;
   padding-left: 15px;
@@ -85,7 +83,7 @@ img {
 
 header .nav {
   width: 100%;
-  padding-bottom: 30px;
+  padding: 0 0 1em;
 }
 
 .nav li {
@@ -126,10 +124,11 @@ header .nav li a {
 
 /*Main Content : Porftolio */
 
-main {
+.portfolio {
   background: #fff;
   display: inline-block;
-  padding: 35px 0 25px;
+  padding: 35px 15px 25px;
+  margin: 0 -15px;
 }
 
 .portfolio p {
@@ -205,7 +204,7 @@ li.extra-footer-links {
 /* iPad Styles */
 @media screen and (min-width: 768px) {
     
-    .wrap {
+    .wrapper {
       max-width: 1024px;
       padding: 0 25px;
     }
@@ -223,9 +222,12 @@ li.extra-footer-links {
       background: transparent;
       padding: 5px 15px;
     }
-    
-    main#portfolio {
-      padding-top: 2em;
+
+    .portfolio {
+      background: #fff;
+      display: inline-block;
+      padding: 2em 25px 5px;
+      margin: 0 -25px;
     }
 
     .portfolio p {
@@ -308,7 +310,7 @@ li.extra-footer-links {
 /*Desktop Only Styles*/
 @media screen and (min-width: 1024px) {
 
-    .wrap {
+    .wrapper {
       max-width: 1600px;
       padding-left: 30px;
       padding-right: 30px;
