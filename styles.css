@@ -20,7 +20,7 @@ body {
   text-align: center;
   font-family: 'Open sans','Helvetica Neue', Helvetica, arial, sans-serif;
   color: #4a4a4a;
-  background: #f5f5f5;
+  background: #f7f6f5;
 }
 
 .wrapper {
@@ -63,7 +63,6 @@ h3 {
   margin: 1.2em 0 0;
 }
 
-/*footer site title*/
 h5 {
   font-size: 14px;
   float: left;
@@ -122,7 +121,7 @@ header .nav li a {
   padding: 0 0 15px;
 }
 
-/*Main Content : Porftolio */
+/* Porftolio */
 
 .portfolio {
   background: #fff;
@@ -197,11 +196,15 @@ footer .nav {
   padding-top: 13px;
 }
 
-li.extra-footer-links {
+li.footer-link {
   display: none;
 }
 
-/* iPad Styles */
+
+/*************************************
+** iPad and Up Styles **
+**************************************/
+
 @media screen and (min-width: 768px) {
     
     .wrapper {
@@ -290,7 +293,7 @@ li.extra-footer-links {
       padding-left: 35px;
     }
     
-    li.extra-footer-links {
+    li.footer-link {
       display: inline-block;
       float: right;
       padding-left: 20px;
@@ -307,22 +310,26 @@ li.extra-footer-links {
 
 }
 
-/*Desktop Only Styles*/
+
+/*************************************
+** iPad Landscape and Up Styles **
+**************************************/
+
 @media screen and (min-width: 1024px) {
 
     .wrapper {
       max-width: 1600px;
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 4em;
+      padding-right: 4em;
     }
 
     header {
-      padding: 3em 4em 1em;
+      padding: 38px 0 1em;
     }
 
     h1 {
       float: left;
-      margin-top: 0px;
+      margin-top: 10px;
       margin-bottom: 0px;
     }
 
@@ -335,21 +342,63 @@ li.extra-footer-links {
     }
 
     .profile {
-      margin-top: 0px;
+      margin-top: -10px;
     }
 
     .profile img {
-      width: 370px;
+      width: 365px;
       margin-left: 35px;
+      margin-top:5px;
     }
     
     .portfolio {
-      max-width: 965px;
+      padding: 3em 1em 5px;
+      margin: 0 -30px;
+    }
+
+    .portfolio h2 {
+      margin-bottom: 60px;
+    }
+
+    .portfolio p {
+      padding: 0 10px 3em;
+      letter-spacing: normal;
     }
 
     .column {
       width: 33.3333%;
       padding: 0 10px;
+    }
+
+    .contact {
+      display: inline-table;
+      margin-top: 57px;
+      margin-bottom: 10px;
+    }
+
+    .contact h4 {
+      margin: 0 0 40px;
+    }
+
+    .contact p {
+      max-width: 65%;
+    }
+
+    .phone-email p {
+      margin-bottom: -7px;
+    }
+
+    .phone-number,
+    .email-address {
+      font-weight: 800;
+    }
+    
+    footer {
+      margin-top: 2em;
+    }
+
+    footer .nav {
+      padding: 23px 0 30px;
     }
 
 }
