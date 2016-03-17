@@ -1,6 +1,6 @@
 # Chris Bryant TechDegree Project 2: Responsive Portfolio
 
-Github project link: https://github.com/bryantweb/chris-bryant-techdegree-2
+Github project link: https://github.com/bryantweb/chris-bryant-techdegree-project-2
 
 ## Installation Instructions
 
@@ -19,16 +19,14 @@ Github project link: https://github.com/bryantweb/chris-bryant-techdegree-2
 * Added media queries to create a responsive style that matches the three breakpoints (mobile, tablet, desktop) and styles provided in the mockups.
 
 
-
-
 ## For Extra Credit 
 * Matched mockup text styles using imported Google font Open Sans.
 * Validated code using HTML and CSS validator.
 * Put project in new GitHub repository.
 * Added folders to organize contents by file type.
 * Added additional color or layout styling to the CSS to enhance the portfolio
-- - background color variation
-- - link hover colors and transitions
+ - background color variation
+ - link hover colors and transitions
 * Provided descriptive classes where appropriate.
 
 
