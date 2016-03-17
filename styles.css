@@ -1,10 +1,16 @@
-/* Global Layout Set-up */
+/* Global */
 
 * { 
   box-sizing: border-box;
 }
 
-.clearfix {
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
   clear: both;
 }
 
@@ -14,13 +20,16 @@ body {
   text-align: center;
   font-family: 'Open sans','Helvetica Neue', Helvetica, arial, sans-serif;
   color: #4a4a4a;
-  background: #fff;
+  background: #f4f4f4;
 }
+
+/* Inner Container = .wrap */
 
 .wrap {
   max-width: 768px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Default Text Styles */
@@ -35,63 +44,42 @@ a:hover {
   color: #13acd1;
 }
 
-h1,h3 {
+h1 {
+  font-size: 25px;
+  text-transform: none;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+h2,
+h4 {
   margin-bottom: 50px;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-h2 {
+h3 {
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 0;
+  margin: 1.2em 0 0;
 }
 
-
+/*footer site title*/
+h5 {
+  font-size: 14px;
+  float: left;
+  display: inline-block;
+}
 
 p {
   font-weight: 300;
 }
 
-.profile {
-  margin-top: .8em;
+img {
+  width: 100%;
+  height: auto;
 }
-.profile p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #7f7f7f;
-  margin: .3em 0 5em 0;
-}
-
-.portfolio p {
-  font-size: 15px;
-  line-height: 1.4em;
-  padding: 0 10px 1.875em;
-}
-
-.contact {
-  margin-top: 95px;
-  margin-bottom: 60px;
-  clear: both;
-  display: block;
-}
-.contact h3 {
-  margin: 0 0 35px;
-}
-.contact p {
-  color: #7f7f7f;
-}
-.phone-email {
-  display: block;
-  margin-top: 30px;
-  margin-bottom:40px;
-}
-  .phone-number,
-  .email-address {
-    font-weight: 600;
-    padding-left: 10px;
-  }
-
 
 /* Header Nav Styles */
 
@@ -100,26 +88,83 @@ header .nav {
   padding-bottom: 30px;
 }
 
+.nav li {
+  font-size: 14px;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
 .nav a {
   font-weight: 700;
   line-height: 1.5em;
 }
 
-.nav li {
-  font-size: 14px;
-  text-transform: uppercase;
-  list-style-type: none;
-  padding: .8em 0;
+header .nav li a {
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 5px;
+  background: #fff;
 }
 
-.nav li.site-title{
-  font-size: 25px;
-  text-transform: none;
-  font-weight: 700;
+/* Profile */
+
+.profile {
+  margin-bottom: 1em;
 }
 
-header .nav li.site-title {
-  padding-top: 20px;
+.profile p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #7f7f7f;
+  margin-top: .3em;
+}
+
+.profile img {
+  padding: 0 0 15px;
+}
+
+/*Main Content : Porftolio */
+
+main {
+  background: #fff;
+  display: inline-block;
+  padding: 35px 0 25px;
+}
+
+.portfolio p {
+  font-size: 15px;
+  line-height: 1.5em;
+  padding: 0 10px 1.6em;
+  margin-top: 12px;
+}
+
+/* Contact Information */
+
+.contact {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.contact h4 {
+  margin: 0 0 35px;
+}
+
+.contact p {
+  color: #7f7f7f;
+}
+
+.phone-email {
+  display: block;
+  margin-top: 30px;
+  margin-bottom:40px;
+}
+
+.phone-number,
+.email-address {
+  font-weight: 600;
+  padding-left: 10px;
 }
 
 /* Columns */
@@ -129,39 +174,22 @@ header .nav li.site-title {
 }
 
 /* Image Styles */
-img {
-  width: 99%;
-  height: auto;
-  padding: 0 0 15px;
-}
 
 .profile img {
   width: 70%;
   height: auto;
 }
 
-.portfolio img {
-  padding: 0 0 .5em;
-}
-
 /* Footer Styles */
 
 footer {
   width: 100%;
-  clear: both;
   display: block;
-  
 }
 
 footer .nav {
   border-top: 1px solid #e7e7e7;
   padding: 10px 0 40px;
-}
-
-footer .nav li.site-title {
-  font-size: 14px;
-  float: left;
-  display: inline-block;
 }
 
 #back-to-top {
@@ -179,32 +207,50 @@ li.extra-footer-links {
     
     .wrap {
       max-width: 1024px;
-      padding: 0 20px;
+      padding: 0 25px;
     }
-    header .nav li.site-title {
+
+    h1 {
       display: block;
+      margin-top: 2em;
     }
 
     header .nav li {
-    padding: .8em 1em;
-    display: inline-block;
+      display: inline-block;
     }
 
-  .portfolio p {
-    font-size: 15px;
-    padding: 0 32px 1.875em;
-    letter-spacing: .5px;
-  }
+    header .nav li a {
+      background: transparent;
+      padding: 5px 15px;
+    }
+    
+    main#portfolio {
+      padding-top: 2em;
+    }
+
+    .portfolio p {
+      font-size: 15px;
+      padding: 0 32px 3em;
+      letter-spacing: .4px;
+    }
+    
     /* PROFILE */
+    
+    .profile {
+      margin-bottom: 3em;
+      margin-top: 1.5em;
+    }
+
     .profile img {
-    width: 290px;
-    float: right;
-    margin-left: 15px;
+      width: 290px;
+      float: right;
+      margin-left: 15px;
     }
     
     .profile p {
-    font-size: 20px;
-    text-align: left;
+      font-size: 20px;
+      text-align: left;
+      margin-top: 0px;
     }
 
     .column {
@@ -213,30 +259,39 @@ li.extra-footer-links {
       float: left;
       padding: 0 6px;
     }
+    
     .contact {
       display: inline-table;
-      margin-top: 80px;
+      margin-top: 65px;
       margin-bottom: 10px;
     }
-    .contact h3 {
+    
+    .contact h4 {
       margin: 0 0 50px;
     }
+    
     .contact p {
-      font-size: 22px;
+      font-size: 21px;
       max-width: 80%;
       margin-left: auto;
       margin-right: auto;
     }
+    
     .phone-email {
-    margin-top: 45px;
+      margin-top: 45px;
     }
 
     /* footer */
     
+    footer .nav li {
+      font-size: 13px;
+      padding-left: 35px;
+    }
+    
     li.extra-footer-links {
       display: inline-block;
       float: right;
-      padding-left: 10px;
+      padding-left: 20px;
     }
     
     li#back-to-top {
@@ -244,8 +299,9 @@ li.extra-footer-links {
     }
 
     footer .nav {
-      padding: 10px 0 100px;
+      padding: 23px 0 80px;
     }
+
 
 }
 
@@ -254,6 +310,44 @@ li.extra-footer-links {
 
     .wrap {
       max-width: 1600px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    header {
+      padding: 3em 4em 1em;
+    }
+
+    h1 {
+      float: left;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    header .nav {
+      float: right;
+      margin-right: 0px;
+      padding-right: 0;
+      display: inline-block;
+      width: auto;
+    }
+
+    .profile {
+      margin-top: 0px;
+    }
+
+    .profile img {
+      width: 370px;
+      margin-left: 35px;
+    }
+    
+    .portfolio {
+      max-width: 965px;
+    }
+
+    .column {
+      width: 33.3333%;
+      padding: 0 10px;
     }
 
 }
