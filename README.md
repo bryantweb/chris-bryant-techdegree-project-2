@@ -21,13 +21,15 @@ Github project link: https://github.com/bryantweb/chris-bryant-techdegree-projec
 
 ## For Extra Credit 
 * Matched mockup text styles using imported Google font Open Sans.
-* Validated code using HTML and CSS validator.
-* Put project in new GitHub repository.
+* Validated code using HTML and CSS validator. (No errors)
+* Added additional content section and linked to it from main, and footer nav.
 * Added folders to organize contents by file type.
 * Added additional color or layout styling to the CSS to enhance the portfolio
- - background color variation
- - link hover colors and transitions
+ - some subtle background color variation
+ - nav hover colors, backgrounds, and transitions
+ - Featured section responsive styles
 * Provided descriptive classes where appropriate.
+* Put project in new GitHub repository.
 
 
 
